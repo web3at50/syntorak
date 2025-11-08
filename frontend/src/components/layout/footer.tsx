@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Mail } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -6,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-border bg-card">
       <div className="container mx-auto px-4 md:px-6 py-8 md:py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
             <h3 className="text-xl font-heading font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -36,6 +37,11 @@ export default function Footer() {
                   About
                 </Link>
               </li>
+              <li>
+                <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -54,6 +60,18 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="font-semibold mb-3">Get In Touch</h4>
+            <a
+              href="mailto:support@syntorak.com"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors group"
+            >
+              <Mail className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              <span>support@syntorak.com</span>
+            </a>
           </div>
         </div>
 
