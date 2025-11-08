@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "@/components/theme-toggle";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -27,7 +28,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex md:gap-x-8">
+        <div className="hidden md:flex md:gap-x-8 md:items-center">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -37,10 +38,12 @@ export default function Header() {
               {item.name}
             </Link>
           ))}
+          <ThemeToggle />
         </div>
 
-        {/* Mobile menu button */}
-        <div className="flex md:hidden">
+        {/* Mobile menu button and theme toggle */}
+        <div className="flex md:hidden items-center gap-2">
+          <ThemeToggle />
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-foreground"
