@@ -97,6 +97,27 @@ The site includes an automatically generated sitemap following Next.js 16 best p
 - **URL**: Accessible at `/robots.txt`
 - **Configuration**: Allows all crawlers, references sitemap
 
+### Open Graph Images
+
+The site includes a dynamically generated Open Graph image for social media sharing:
+
+- **Location**: `frontend/src/app/opengraph-image.tsx`
+- **Technology**: Next.js `ImageResponse` API
+- **Size**: 1200x630px (optimized for Facebook, Twitter, LinkedIn, Discord)
+- **Design**: On-brand gradient (Orange to Green), "Syntorak" title, tagline
+- **Generation**: Automatically created at build time
+- **Caching**: Statically optimized for fast loading
+
+**Platforms Supported:**
+- Facebook/Meta
+- Twitter/X
+- LinkedIn
+- Discord
+- Slack
+- WhatsApp
+
+**Preview URL**: `/opengraph-image` (or auto-embedded in social shares)
+
 ## Deployment
 
 This project is configured for deployment on Vercel:
