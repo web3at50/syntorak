@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${lora.variable} ${poppins.variable}`}>
-      <body className="antialiased">
+      <body>
         <Header />
         <main className="min-h-screen">
           {children}

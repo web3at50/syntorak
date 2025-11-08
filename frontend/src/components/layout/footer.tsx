@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-lora font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h3 className="text-xl font-heading font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Syntorak
             </h3>
             <p className="text-muted-foreground text-sm">
