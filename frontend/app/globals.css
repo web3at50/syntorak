@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand Colors - Light Mode */
+    --background: 0 0% 98%;                    /* #fafafa */
+    --foreground: 0 0% 10%;                    /* #1A1A1A */
+    --card: 0 0% 100%;                         /* #ffffff */
+    --card-foreground: 0 0% 10%;               /* #1A1A1A */
+    --popover: 0 0% 100%;                      /* #ffffff */
+    --popover-foreground: 0 0% 10%;            /* #1A1A1A */
+    --primary: 26 92% 54%;                     /* #F7931E - Orange */
+    --primary-foreground: 0 0% 100%;           /* #ffffff */
+    --secondary: 122 39% 49%;                  /* #4CAF50 - Green */
+    --secondary-foreground: 0 0% 100%;         /* #ffffff */
+    --tertiary: 14 100% 60%;                   /* #FF6B35 - Coral */
+    --accent: 36 100% 93%;                     /* #FAEBD7 */
+    --accent-foreground: 0 0% 10%;             /* #1A1A1A */
+    --muted: 0 0% 96%;                         /* #f5f5f5 */
+    --muted-foreground: 0 0% 45%;              /* #737373 */
+    --destructive: 4 90% 58%;                  /* #EF5350 */
+    --destructive-foreground: 0 0% 100%;       /* #ffffff */
+    --border: 30 15% 90%;                      /* #E8D8C8 */
+    --input: 30 15% 90%;                       /* #E8D8C8 */
+    --ring: 26 92% 54%;                        /* #F7931E */
+    --success: 122 39% 49%;                    /* #4CAF50 */
+    --warning: 28 98% 58%;                     /* #FFA726 */
+    --info: 207 82% 62%;                       /* #42A5F5 */
+    --radius: 0.625rem;                        /* 10px */
+  }
+
+  .dark {
+    /* Brand Colors - Dark Mode */
+    --background: 0 0% 7%;                     /* #121212 */
+    --foreground: 0 0% 98%;                    /* #fafafa */
+    --card: 0 0% 12%;                          /* #1E1E1E */
+    --card-foreground: 0 0% 98%;               /* #fafafa */
+    --popover: 0 0% 12%;                       /* #1E1E1E */
+    --popover-foreground: 0 0% 98%;            /* #fafafa */
+    --primary: 26 100% 70%;                    /* #FFB366 */
+    --primary-foreground: 0 0% 7%;             /* #121212 */
+    --secondary: 122 39% 65%;                  /* #81C784 */
+    --secondary-foreground: 0 0% 7%;           /* #121212 */
+    --accent: 0 0% 24%;                        /* #3E3E3E */
+    --accent-foreground: 0 0% 98%;             /* #fafafa */
+    --muted: 0 0% 17%;                         /* #2C2C2C */
+    --muted-foreground: 0 0% 63%;              /* #a1a1a1 */
+    --destructive: 4 90% 58%;                  /* #EF5350 */
+    --destructive-foreground: 0 0% 98%;        /* #fafafa */
+    --border: 0 0% 24%;                        /* #3E3E3E */
+    --input: 0 0% 24%;                         /* #3E3E3E */
+    --ring: 26 100% 70%;                       /* #FFB366 */
+    --success: 122 42% 60%;                    /* #66BB6A */
+    --warning: 28 98% 65%;                     /* #FFB74D */
+    --info: 207 82% 70%;                       /* #64B5F6 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-lora font-bold;
+  }
+}

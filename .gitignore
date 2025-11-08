@@ -1,0 +1,45 @@
+# Setup directory (user's personal files)
+Setup/
+
+# Workspace file
+syntorak.code-workspace
+
+# Dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.js
+/frontend/.yarn/install-state.gz
+
+# Testing
+/frontend/coverage
+
+# Next.js
+/frontend/.next/
+/frontend/out/
+
+# Production
+/frontend/build
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local env files
+.env*.local
+.env
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+/frontend/next-env.d.ts
+
+# Claude
+.claude/
