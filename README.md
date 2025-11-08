@@ -74,6 +74,29 @@ npm run dev
 - **Type Safety** - Full TypeScript coverage
 - **Modern Tooling** - Turbopack for 2-5x faster builds
 
+## SEO
+
+### Sitemap
+
+The site includes an automatically generated sitemap following Next.js 16 best practices:
+
+- **Location**: `frontend/src/app/sitemap.ts`
+- **URL**: Accessible at `/sitemap.xml`
+- **Type**: Static generation with `force-static`
+- **Updates**: Regenerated on each build
+
+**Included Pages:**
+- Home (`/`) - Priority: 1.0
+- Portfolio (`/portfolio`) - Priority: 0.9
+- Platewise (`/portfolio/platewise`) - Priority: 0.8
+- Prompt Builder (`/portfolio/prompt-builder`) - Priority: 0.8
+
+### Robots.txt
+
+- **Location**: `frontend/src/app/robots.ts`
+- **URL**: Accessible at `/robots.txt`
+- **Configuration**: Allows all crawlers, references sitemap
+
 ## Deployment
 
 This project is configured for deployment on Vercel:
@@ -87,7 +110,15 @@ This project is configured for deployment on Vercel:
 
 ### Environment Variables
 
-No environment variables required for initial deployment.
+For local development, create a `.env.local` file:
+
+```bash
+# Site URL for sitemap generation
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
+
+For production deployment on Vercel, add:
+- `NEXT_PUBLIC_SITE_URL` - Your custom domain (e.g., `https://syntorak.com`)
 
 ## Featured Projects
 
