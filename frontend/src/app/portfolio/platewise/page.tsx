@@ -263,14 +263,13 @@ export default function Platewise() {
           </div>
         </section>
 
-        {/* Optional: Demo Video Section (commented out - uncomment when video is ready) */}
-        {/*
+        {/* Demo Video Section */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Demo Walkthrough</h2>
           <div className="rounded-lg border-2 border-border overflow-hidden shadow-xl">
             <div className="aspect-video">
               <iframe
-                src="https://player.vimeo.com/video/YOUR_VIDEO_ID"
+                src="https://player.vimeo.com/video/1135475715"
                 className="w-full h-full"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
@@ -279,10 +278,9 @@ export default function Platewise() {
             </div>
           </div>
           <p className="text-sm text-muted-foreground mt-3 text-center italic">
-            60-second walkthrough showing recipe generation, cost tracking, and admin features
+            Live demo of the recipe creation process showing multi-AI generation in action
           </p>
         </section>
-        */}
 
         {/* Why I Built This */}
         <section className="mb-16">
