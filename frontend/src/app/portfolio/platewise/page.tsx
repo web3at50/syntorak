@@ -65,10 +65,14 @@ export default function Platewise() {
         {/* Hero Screenshot */}
         <div className="mb-16">
           <div className="rounded-lg border-2 border-border overflow-hidden shadow-xl">
-            {/* TODO: Replace with actual screenshot */}
-            <div className="aspect-video bg-muted flex items-center justify-center">
-              <p className="text-muted-foreground">Recipe Generation Screenshot (4 AI Providers Side-by-Side)</p>
-            </div>
+            <Image
+              src="/images/portfolio/platewise/01-recipe-generation.png"
+              alt="PlateWise recipe generation showing four AI providers generating different recipe styles simultaneously"
+              width={1920}
+              height={1080}
+              className="w-full h-auto"
+              priority
+            />
           </div>
           <p className="text-sm text-muted-foreground mt-3 text-center italic">
             Four different AI models (OpenAI, Anthropic, Gemini, XAI) generating unique recipe variations from the same input
@@ -193,10 +197,14 @@ export default function Platewise() {
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Recipe Generation (4 AI Styles)</h3>
             <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
-              {/* TODO: Replace with actual screenshot */}
-              <div className="aspect-video bg-muted flex items-center justify-center">
-                <p className="text-muted-foreground">Screenshot: 01-recipe-generation.png</p>
-              </div>
+              <Image
+                src="/images/portfolio/platewise/01-recipe-generation.png"
+                alt="Recipe generation interface showing four AI-generated recipe styles from OpenAI, Anthropic, Gemini, and XAI displayed side-by-side"
+                width={1920}
+                height={1080}
+                className="w-full h-auto"
+                priority
+              />
             </div>
             <p className="text-muted-foreground">
               Four different AI providers generate unique variations of the same dish (Balanced, Guided, Streamlined, Essential), allowing users to compare and choose their preferred style.
@@ -207,10 +215,13 @@ export default function Platewise() {
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">AI Cost Analytics Dashboard</h3>
             <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
-              {/* TODO: Replace with actual screenshot */}
-              <div className="aspect-video bg-muted flex items-center justify-center">
-                <p className="text-muted-foreground">Screenshot: 02-analytics-dashboard.png</p>
-              </div>
+              <Image
+                src="/images/portfolio/platewise/02-analytics-dashboard.png"
+                alt="AI usage analytics dashboard showing cost tracking, provider performance comparison, and token usage metrics"
+                width={1920}
+                height={1080}
+                className="w-full h-auto"
+              />
             </div>
             <p className="text-muted-foreground">
               Real-time tracking of AI usage costs, token consumption, and provider performance. Shows total costs, average cost per recipe, and identifies the most cost-effective providers.
@@ -221,10 +232,13 @@ export default function Platewise() {
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Admin Recipe Review Workflow</h3>
             <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
-              {/* TODO: Replace with actual screenshot */}
-              <div className="aspect-video bg-muted flex items-center justify-center">
-                <p className="text-muted-foreground">Screenshot: 03-admin-review.png</p>
-              </div>
+              <Image
+                src="/images/portfolio/platewise/03-admin-review.png"
+                alt="Admin recipe review dashboard with SEO metadata editing, allergen tag management, and publication controls"
+                width={1920}
+                height={1080}
+                className="w-full h-auto"
+              />
             </div>
             <p className="text-muted-foreground">
               Admin dashboard for reviewing AI-generated recipes, editing SEO metadata, managing allergen tags, and controlling publication to public pages.
@@ -235,10 +249,13 @@ export default function Platewise() {
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Weekly Meal Planner</h3>
             <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
-              {/* TODO: Replace with actual screenshot */}
-              <div className="aspect-video bg-muted flex items-center justify-center">
-                <p className="text-muted-foreground">Screenshot: 04-meal-planner.png</p>
-              </div>
+              <Image
+                src="/images/portfolio/platewise/04-meal-planner.png"
+                alt="Weekly meal planning calendar with recipe scheduling for breakfast, lunch, and dinner across the week"
+                width={1920}
+                height={1080}
+                className="w-full h-auto"
+              />
             </div>
             <p className="text-muted-foreground">
               Weekly calendar view for meal planning with breakfast, lunch, and dinner scheduling. Demonstrates complete user journey from recipe generation to meal organization.
