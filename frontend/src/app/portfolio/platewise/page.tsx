@@ -27,14 +27,40 @@ export default function Platewise() {
           </p>
 
           {/* Demo Disclaimer Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/10 border-2 border-amber-500/20 text-amber-600 dark:text-amber-400 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/10 border-2 border-amber-500/20 text-amber-600 dark:text-amber-400 mb-6">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
             </svg>
             <span className="font-semibold">Portfolio Demo Only - Not for Production Use</span>
           </div>
 
+          {/* Technical Teams Callout */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/10 border-2 border-blue-500/20 text-blue-600 dark:text-blue-400 mb-8">
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+            </svg>
+            <span className="font-semibold">
+              Technical teams & agencies: <a href="#technical-details" className="underline hover:text-blue-700 dark:hover:text-blue-300">Jump to implementation details ↓</a>
+            </span>
+          </div>
         </div>
+
+        {/* Hero Screenshot */}
+        <section className="mb-16">
+          <div className="rounded-lg border-4 border-primary/20 overflow-hidden shadow-2xl ring-2 ring-primary/10">
+            <ImageLightbox
+              src="/images/portfolio/platewise/01-recipe-generation.png"
+              alt="Four different AI-generated recipe styles displayed side-by-side showing Platewise's unique multi-AI approach"
+              width={1920}
+              height={1080}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+          <p className="text-center text-muted-foreground mt-4 text-lg">
+            <strong>One search, four AI-powered recipe styles to choose from.</strong> See how OpenAI, Anthropic, Google, and XAI each interpret your ingredients differently. <span className="text-sm italic">(Click to enlarge)</span>
+          </p>
+        </section>
 
         {/* The Challenge */}
         <section className="mb-16">
@@ -257,7 +283,7 @@ export default function Platewise() {
         </section>
 
         {/* Technical Implementation Divider */}
-        <div className="my-16 border-t-4 border-primary/20"></div>
+        <div id="technical-details" className="my-16 border-t-4 border-primary/20"></div>
         <section className="mb-16">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
