@@ -161,7 +161,7 @@ export default function Platewise() {
           <div className="rounded-lg border-4 border-primary/20 overflow-hidden shadow-2xl mb-4 ring-2 ring-primary/10">
             <div className="aspect-video bg-black">
               <iframe
-                src="https://player.vimeo.com/video/1135645005?h=de283f1d18"
+                src="https://player.vimeo.com/video/1135668926?h=de283f1d18"
                 className="w-full h-full"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
