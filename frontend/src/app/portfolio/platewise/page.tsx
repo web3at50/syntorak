@@ -192,6 +192,25 @@ export default function Platewise() {
             </p>
           </div>
 
+          {/* Third Demo Option */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold mb-4">Alternative Demo View</h3>
+            <div className="rounded-lg border-4 border-amber-500/20 overflow-hidden shadow-2xl mb-4 ring-2 ring-amber-500/10">
+              <div className="aspect-video bg-black">
+                <iframe
+                  src="https://player.vimeo.com/video/1135638867?h=82716e16b3"
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+            <p className="text-sm text-muted-foreground text-center italic">
+              Third viewing option - testing different recording approaches
+            </p>
+          </div>
+
           {/* Screenshot 1: Recipe Generation */}
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Recipe Variety - Choose Your Style</h3>
