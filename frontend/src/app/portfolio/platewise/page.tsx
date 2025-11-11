@@ -169,9 +169,28 @@ export default function Platewise() {
               ></iframe>
             </div>
           </div>
-          <p className="text-sm text-muted-foreground text-center italic mb-12">
+          <p className="text-sm text-muted-foreground text-center italic mb-8">
             Watch how the app generates four different recipe styles in real-time (Vimeo displays thumbnail automatically)
           </p>
+
+          {/* Alternative Mobile-Optimized Demo */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold mb-4">Mobile-Optimized Demo View</h3>
+            <div className="rounded-lg border-4 border-secondary/20 overflow-hidden shadow-2xl mb-4 ring-2 ring-secondary/10">
+              <div className="aspect-video bg-black">
+                <iframe
+                  src="https://player.vimeo.com/video/1135635287?h=3341298337"
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+            <p className="text-sm text-muted-foreground text-center italic">
+              Closer view of the interface - easier to follow on mobile devices
+            </p>
+          </div>
 
           {/* Screenshot 1: Recipe Generation */}
           <div className="mb-12">
