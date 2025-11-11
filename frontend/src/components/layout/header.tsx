@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <nav className="container mx-auto flex items-center justify-between p-4 md:px-6 lg:px-8">
+      <nav className="container mx-auto max-w-7xl flex items-center justify-between p-4 md:px-6 lg:px-8">
         {/* Logo */}
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">

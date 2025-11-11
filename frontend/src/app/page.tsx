@@ -5,7 +5,7 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/10 via-background to-secondary/10 py-20 md:py-32">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Syntorak
@@ -33,7 +33,7 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="py-16 md:py-24 bg-card">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl mb-6">About Syntorak</h2>
             <p className="text-lg text-muted-foreground mb-6">
@@ -50,7 +50,7 @@ export default function Home() {
 
       {/* Portfolio Preview */}
       <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl mb-4">Featured Projects</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -58,7 +58,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Platewise Card */}
             <Link
               href="/portfolio/platewise"

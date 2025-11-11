@@ -20,7 +20,7 @@ const projects = [
 export default function Portfolio() {
   return (
     <div className="py-16 md:py-24">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6">Portfolio</h1>
@@ -31,7 +31,7 @@ export default function Portfolio() {
         </div>
 
         {/* Projects Grid */}
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project) => (
             <Link
               key={project.slug}

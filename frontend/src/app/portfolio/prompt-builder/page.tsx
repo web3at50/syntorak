@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function PromptBuilder() {
   return (
     <div className="py-16 md:py-24">
-      <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         {/* Back Link */}
         <Link
           href="/portfolio"
