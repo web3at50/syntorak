@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { ImageLightbox } from "@/components/ImageLightbox";
 
 export default function Platewise() {
   return (
@@ -157,8 +158,8 @@ export default function Platewise() {
         {/* Demo Video Section */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">See It In Action</h2>
-          <div className="rounded-lg border-2 border-border overflow-hidden shadow-xl mb-4">
-            <div className="aspect-video">
+          <div className="rounded-lg border-4 border-primary/20 overflow-hidden shadow-2xl mb-4 ring-2 ring-primary/10">
+            <div className="aspect-video bg-black">
               <iframe
                 src="https://player.vimeo.com/video/1135475715"
                 className="w-full h-full"
@@ -169,14 +170,14 @@ export default function Platewise() {
             </div>
           </div>
           <p className="text-sm text-muted-foreground text-center italic mb-12">
-            Watch how the app generates four different recipe styles in real-time
+            Watch how the app generates four different recipe styles in real-time (Vimeo displays thumbnail automatically)
           </p>
 
           {/* Screenshot 1: Recipe Generation */}
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Recipe Variety - Choose Your Style</h3>
             <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
-              <Image
+              <ImageLightbox
                 src="/images/portfolio/platewise/01-recipe-generation.png"
                 alt="Recipe generation interface showing four different recipe styles displayed side-by-side for user comparison"
                 width={1920}
@@ -186,7 +187,7 @@ export default function Platewise() {
               />
             </div>
             <p className="text-muted-foreground">
-              Every search generates four different styles: Balanced (comprehensive), Guided (step-by-step), Streamlined (efficient), and Essential (quick reference). Choose the one that matches your cooking preference.
+              Every search generates four different styles: Balanced (comprehensive), Guided (step-by-step), Streamlined (efficient), and Essential (quick reference). Choose the one that matches your cooking preference. <span className="text-sm italic">(Click image to enlarge)</span>
             </p>
           </div>
 
@@ -194,7 +195,7 @@ export default function Platewise() {
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Weekly Meal Planning Made Simple</h3>
             <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
-              <Image
+              <ImageLightbox
                 src="/images/portfolio/platewise/04-meal-planner.png"
                 alt="Weekly meal planning calendar with recipe scheduling for breakfast, lunch, and dinner across the week"
                 width={1920}
@@ -203,7 +204,7 @@ export default function Platewise() {
               />
             </div>
             <p className="text-muted-foreground">
-              Organize your entire week with the calendar view. Plan breakfast, lunch, and dinner, then automatically generate a shopping list for all your planned meals.
+              Organize your entire week with the calendar view. Plan breakfast, lunch, and dinner, then automatically generate a shopping list for all your planned meals. <span className="text-sm italic">(Click image to enlarge)</span>
             </p>
           </div>
         </section>
@@ -387,7 +388,7 @@ export default function Platewise() {
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">AI Cost Analytics Dashboard</h3>
             <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
-              <Image
+              <ImageLightbox
                 src="/images/portfolio/platewise/02-analytics-dashboard.png"
                 alt="AI usage analytics dashboard showing cost tracking, provider performance comparison, and token usage metrics"
                 width={1920}
@@ -396,7 +397,7 @@ export default function Platewise() {
               />
             </div>
             <p className="text-muted-foreground">
-              Real-time tracking of AI usage costs, token consumption, and provider performance. Shows total costs, average cost per recipe, and identifies the most cost-effective providers for data-driven decision making.
+              Real-time tracking of AI usage costs, token consumption, and provider performance. Shows total costs, average cost per recipe, and identifies the most cost-effective providers for data-driven decision making. <span className="text-sm italic">(Click image to enlarge)</span>
             </p>
           </div>
 
@@ -404,7 +405,7 @@ export default function Platewise() {
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Admin Recipe Review & Publishing Workflow</h3>
             <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
-              <Image
+              <ImageLightbox
                 src="/images/portfolio/platewise/03-admin-review.png"
                 alt="Admin recipe review dashboard with SEO metadata editing, allergen tag management, and publication controls"
                 width={1920}
@@ -413,7 +414,7 @@ export default function Platewise() {
               />
             </div>
             <p className="text-muted-foreground">
-              Comprehensive admin dashboard for reviewing AI-generated recipes, editing SEO metadata, managing allergen tags, and controlling publication to public recipe pages. Demonstrates role-based access control implementation.
+              Comprehensive admin dashboard for reviewing AI-generated recipes, editing SEO metadata, managing allergen tags, and controlling publication to public recipe pages. Demonstrates role-based access control implementation. <span className="text-sm italic">(Click image to enlarge)</span>
             </p>
           </div>
         </section>
