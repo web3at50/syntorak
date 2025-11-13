@@ -50,7 +50,7 @@ export default function Platewise() {
 
         {/* Hero Screenshot */}
         <section className="mb-16">
-          <div className="rounded-lg border-4 border-primary/20 overflow-hidden shadow-2xl ring-2 ring-primary/10">
+          <div className="rounded-lg border-4 border-orange-500/30 overflow-hidden shadow-2xl">
             <ImageLightbox
               src="/images/portfolio/platewise/01-recipe-generation.png"
               alt="Four different AI-generated recipe styles displayed side-by-side showing Platewise's unique multi-AI approach"
@@ -152,7 +152,7 @@ export default function Platewise() {
         {/* Demo Video Section */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">See It In Action</h2>
-          <div className="rounded-lg border-4 border-primary/20 overflow-hidden shadow-2xl mb-4 ring-2 ring-primary/10">
+          <div className="rounded-lg border-4 border-orange-500/30 overflow-hidden shadow-2xl mb-4">
             <div className="aspect-video bg-black">
               <iframe
                 src="https://player.vimeo.com/video/1135668926?h=de283f1d18"
@@ -170,7 +170,7 @@ export default function Platewise() {
           {/* Screenshot 1: Recipe Generation */}
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Recipe Variety - Choose Your Style</h3>
-            <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
+            <div className="rounded-lg border-4 border-orange-500/30 overflow-hidden shadow-lg mb-4">
               <ImageLightbox
                 src="/images/portfolio/platewise/01-recipe-generation.png"
                 alt="Recipe generation interface showing four different recipe styles displayed side-by-side for user comparison"
@@ -188,7 +188,7 @@ export default function Platewise() {
           {/* Screenshot 2: Meal Planner */}
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Weekly Meal Planning Made Simple</h3>
-            <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
+            <div className="rounded-lg border-4 border-orange-500/30 overflow-hidden shadow-lg mb-4">
               <ImageLightbox
                 src="/images/portfolio/platewise/04-meal-planner.png"
                 alt="Weekly meal planning calendar with recipe scheduling for breakfast, lunch, and dinner across the week"
@@ -438,7 +438,7 @@ export default function Platewise() {
           {/* Screenshot 1: Analytics Dashboard */}
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">AI Cost Analytics Dashboard</h3>
-            <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
+            <div className="rounded-lg border-4 border-orange-500/30 overflow-hidden shadow-lg mb-4">
               <ImageLightbox
                 src="/images/portfolio/platewise/02-analytics-dashboard.png"
                 alt="AI usage analytics dashboard showing cost tracking, provider performance comparison, and token usage metrics"
@@ -455,7 +455,7 @@ export default function Platewise() {
           {/* Screenshot 2: Admin Review */}
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Admin Recipe Review & Publishing Workflow</h3>
-            <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
+            <div className="rounded-lg border-4 border-orange-500/30 overflow-hidden shadow-lg mb-4">
               <ImageLightbox
                 src="/images/portfolio/platewise/03-admin-review.png"
                 alt="Admin recipe review dashboard with SEO metadata editing, allergen tag management, and publication controls"

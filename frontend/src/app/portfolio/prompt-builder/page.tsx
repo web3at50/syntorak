@@ -50,7 +50,7 @@ export default function PromptBuilder() {
 
         {/* Hero Screenshot */}
         <section className="mb-16">
-          <div className="rounded-lg border-4 border-primary/20 overflow-hidden shadow-2xl ring-2 ring-primary/10">
+          <div className="rounded-lg border-4 border-orange-500/30 overflow-hidden shadow-2xl">
             <ImageLightbox
               src="/images/portfolio/promptbuilder/05-version-history.png"
               alt="Complete version history interface showing prompt iterations with one-click restoration capability"
@@ -153,19 +153,15 @@ export default function PromptBuilder() {
         {/* Demo Video Section */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">See It In Action</h2>
-          <div className="rounded-lg border-4 border-primary/20 overflow-hidden shadow-2xl mb-4 ring-2 ring-primary/10">
+          <div className="rounded-lg border-4 border-orange-500/30 overflow-hidden shadow-2xl mb-4">
             <div className="aspect-video bg-black">
-              {/* TODO: Replace with actual Vimeo embed once video is uploaded */}
-              <div className="w-full h-full flex items-center justify-center text-white">
-                <p className="text-lg">Admin Dashboard Walkthrough Video - Coming Soon</p>
-              </div>
-              {/* <iframe
-                src="https://player.vimeo.com/video/YOUR_VIDEO_ID?h=YOUR_HASH"
+              <iframe
+                src="https://player.vimeo.com/video/1136497500"
                 className="w-full h-full"
-                frameBorder="0"
+                style={{ border: 0 }}
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
-              ></iframe> */}
+              ></iframe>
             </div>
           </div>
           <p className="text-sm text-muted-foreground text-center italic mb-12">
@@ -175,7 +171,7 @@ export default function PromptBuilder() {
           {/* Screenshot 1: Dual AI Comparison */}
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Dual AI Comparison - Claude vs ChatGPT</h3>
-            <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
+            <div className="rounded-lg border-4 border-orange-500/30 overflow-hidden shadow-lg mb-4">
               <ImageLightbox
                 src="/images/portfolio/promptbuilder/01-dual-comparison.png"
                 alt="Side-by-side comparison of Claude Sonnet 4.5 and GPT-4o responses to the same prompt"
@@ -193,7 +189,7 @@ export default function PromptBuilder() {
           {/* Screenshot 2: Community Gallery */}
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Community Prompt Library</h3>
-            <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
+            <div className="rounded-lg border-4 border-orange-500/30 overflow-hidden shadow-lg mb-4">
               <ImageLightbox
                 src="/images/portfolio/promptbuilder/03-community-gallery.png"
                 alt="Community prompt library with filtering, search, and discovery features"
@@ -210,7 +206,7 @@ export default function PromptBuilder() {
           {/* Screenshot 3: Version History */}
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Complete Version Control</h3>
-            <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
+            <div className="rounded-lg border-4 border-orange-500/30 overflow-hidden shadow-lg mb-4">
               <ImageLightbox
                 src="/images/portfolio/promptbuilder/05-version-history.png"
                 alt="Version history interface showing all prompt iterations with restoration capability"
@@ -475,7 +471,7 @@ export default function PromptBuilder() {
           {/* Screenshot 1: Admin Dashboard */}
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Admin Analytics Dashboard</h3>
-            <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
+            <div className="rounded-lg border-4 border-orange-500/30 overflow-hidden shadow-lg mb-4">
               <ImageLightbox
                 src="/images/portfolio/promptbuilder/04-admin-dashboard.png"
                 alt="Admin analytics dashboard showing cost tracking, usage trends, and provider performance metrics"
@@ -492,7 +488,7 @@ export default function PromptBuilder() {
           {/* Screenshot 2: Moderation Dashboard */}
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-4">Content Moderation Dashboard</h3>
-            <div className="rounded-lg border-2 border-border overflow-hidden shadow-lg mb-4">
+            <div className="rounded-lg border-4 border-orange-500/30 overflow-hidden shadow-lg mb-4">
               <ImageLightbox
                 src="/images/portfolio/promptbuilder/02-moderation-dashboard.png"
                 alt="Content moderation dashboard with OpenAI safety scores and approval workflow controls"
