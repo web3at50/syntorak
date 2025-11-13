@@ -1,161 +1,139 @@
 # Syntorak Portfolio
 
-A modern portfolio website showcasing web applications and sites built with cutting-edge technologies.
+**Modern portfolio website showcasing full-stack web applications**
+
+## What This Is
+
+This is my personal portfolio site, built to showcase the web applications I've developed. Rather than just listing projects, each portfolio piece includes detailed case studies highlighting the technical decisions, challenges overcome, and skills demonstrated.
+
+**Current featured projects:**
+- [PlateWise](/portfolio/platewise) - AI recipe manager with multi-provider comparison
+- [Prompt Builder](/portfolio/prompt-builder) - AI prompt management platform
+
+## Why Built This Way
+
+**Technology Choices:**
+I chose bleeding-edge technologies to demonstrate comfort working with the latest tools and staying current with modern web development practices. The site uses Next.js 16 (released January 2025), React 19, and Tailwind CSS 4 - all representing the current state of frontend development.
+
+**Philosophy:**
+Clean, fast, accessible. Every component is built with mobile users in mind first, using semantic HTML and proper heading hierarchy for accessibility. The design system is consistent and professional without being flashy.
 
 ## Tech Stack
 
-- **Next.js 16.0.1** - React framework with App Router and Turbopack
-- **React 19.2** - Latest React with enhanced features
-- **TypeScript** - Type-safe development
-- **Tailwind CSS 4** - Utility-first CSS framework with new @theme syntax
-- **shadcn/ui** - Beautiful, accessible component library
-- **Lucide React** - Icon library
-- **React Compiler 1.0** - Automatic optimization
+**Framework:** Next.js 16 with App Router and Turbopack (2-5x faster builds)
+
+**Frontend:** React 19, TypeScript, Tailwind CSS 4 (new @theme syntax)
+
+**UI Components:** shadcn/ui (accessible, customizable components)
+
+**Optimization:** React Compiler 1.0 for automatic performance optimization
+
+**Hosting:** Vercel with edge deployment
+
+## Key Features
+
+**1. Mobile-First Design**
+Fully responsive with optimized layouts for all screen sizes. Interactive hamburger menu, touch-friendly navigation, and readable typography on mobile devices.
+
+**2. Dark Mode Support**
+Complete light/dark theme system with persistent user preference. Smooth transitions and carefully chosen colors for readability in both modes.
+
+**3. Performance Optimized**
+- Turbopack dev server for instant hot module replacement
+- React Compiler for automatic memoization
+- Self-hosted fonts for zero network requests
+- Optimized images and assets
+
+**4. SEO Ready**
+Auto-generated sitemap, proper robots.txt, Open Graph images for social sharing, semantic HTML structure, and descriptive meta tags.
+
+**5. Interactive Portfolio Pages**
+Each project includes screenshots with lightbox viewing, detailed case studies, tech stack breakdowns, and links to live demos.
+
+## Design System
+
+**Colors:** Orange (#F7931E) and Green (#4CAF50) gradient palette
+
+**Typography:** Lora for headings (elegant serif), Poppins for body text (clean sans-serif)
+
+**Components:** Consistent 10px border radius, subtle shadows, smooth transitions
+
+**Layout:** Maximum content width for readability, generous whitespace, clear visual hierarchy
+
+## Skills Demonstrated
+
+**Modern Web Development:**
+Using latest Next.js features (App Router, Server Components), React 19 concurrent features, and Turbopack tooling
+
+**Type Safety:**
+Full TypeScript implementation with proper type definitions and interfaces
+
+**Responsive Design:**
+Mobile-first CSS, flexible layouts, accessible navigation patterns
+
+**Component Architecture:**
+Reusable UI components, proper separation of concerns, maintainable code structure
+
+**Performance:**
+Code splitting, lazy loading, optimized assets, React Compiler integration
+
+**SEO & Social:**
+Structured data, meta tags, Open Graph images, sitemaps
 
 ## Project Structure
 
 ```
 syntorak/
-├── frontend/             # Next.js application
-│   ├── src/             # Source directory
-│   │   ├── app/         # App router pages and layouts
-│   │   ├── components/  # Reusable components
-│   │   │   ├── ui/      # shadcn/ui components
-│   │   │   └── layout/  # Header, Footer
-│   │   └── lib/         # Utilities and helpers
-│   ├── public/          # Static assets
-│   ├── package.json
-│   └── tailwind.config.ts
+├── frontend/
+│   ├── src/
+│   │   ├── app/              # Pages and routing
+│   │   │   ├── portfolio/    # Portfolio project pages
+│   │   │   ├── sitemap.ts    # Auto-generated sitemap
+│   │   │   └── robots.ts     # Crawler configuration
+│   │   ├── components/       # Reusable UI
+│   │   │   ├── ui/           # shadcn components
+│   │   │   └── layout/       # Header, Footer
+│   │   ├── contexts/         # Theme management
+│   │   └── lib/              # Utilities
+│   ├── public/               # Static assets & screenshots
+│   └── package.json
 └── README.md
 ```
 
-## Getting Started
+## Local Development
 
-### Prerequisites
-
+**Prerequisites:**
 - Node.js 20.9.0+ (required for Next.js 16)
-- npm (or pnpm, yarn, bun)
+- npm or pnpm
 
-### Installation
-
-1. Clone the repository:
+**Quick Start:**
 ```bash
 git clone https://github.com/web3at50/syntorak.git
-cd syntorak
-```
-
-2. Install dependencies:
-```bash
-cd frontend
+cd syntorak/frontend
 npm install
-```
-
-3. Run the development server:
-```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+Visit `http://localhost:3000` to see the site.
 
-## Development
+## What's Next
 
-### Scripts
+As I build more applications, they'll be added to the portfolio section with detailed case studies. Future additions might include:
+- More SaaS applications demonstrating different tech stacks
+- Open source projects and contributions
+- Technical writing samples
+- Interactive demos and code examples
 
-- `npm run dev` - Start development server with Turbopack
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
+## About
 
-### Features
+This portfolio demonstrates my ability to:
+- Build production-ready applications with modern JavaScript frameworks
+- Make thoughtful technology choices based on project requirements
+- Create accessible, responsive user interfaces
+- Write clean, maintainable TypeScript code
+- Stay current with rapidly evolving web technologies
+- Present technical work in an accessible way
 
-- **Mobile-First Design** - Responsive hamburger menu and optimized layouts
-- **Dark Mode Support** - Complete light/dark theme system
-- **Font Optimization** - Self-hosted Google Fonts (Lora + Poppins)
-- **Type Safety** - Full TypeScript coverage
-- **Modern Tooling** - Turbopack for 2-5x faster builds
+---
 
-## SEO
-
-### Sitemap
-
-The site includes an automatically generated sitemap following Next.js 16 best practices:
-
-- **Location**: `frontend/src/app/sitemap.ts`
-- **URL**: Accessible at `/sitemap.xml`
-- **Type**: Static generation with `force-static`
-- **Updates**: Regenerated on each build
-
-**Included Pages:**
-- Home (`/`) - Priority: 1.0
-- Portfolio (`/portfolio`) - Priority: 0.9
-- Platewise (`/portfolio/platewise`) - Priority: 0.8
-- Prompt Builder (`/portfolio/prompt-builder`) - Priority: 0.8
-
-### Robots.txt
-
-- **Location**: `frontend/src/app/robots.ts`
-- **URL**: Accessible at `/robots.txt`
-- **Configuration**: Allows all crawlers, references sitemap
-
-### Open Graph Images
-
-The site includes a dynamically generated Open Graph image for social media sharing:
-
-- **Location**: `frontend/src/app/opengraph-image.tsx`
-- **Technology**: Next.js `ImageResponse` API
-- **Size**: 1200x630px (optimized for Facebook, Twitter, LinkedIn, Discord)
-- **Design**: On-brand gradient (Orange to Green), "Syntorak" title, tagline
-- **Generation**: Automatically created at build time
-- **Caching**: Statically optimized for fast loading
-
-**Platforms Supported:**
-- Facebook/Meta
-- Twitter/X
-- LinkedIn
-- Discord
-- Slack
-- WhatsApp
-
-**Preview URL**: `/opengraph-image` (or auto-embedded in social shares)
-
-## Deployment
-
-This project is configured for deployment on Vercel:
-
-1. Import the repository in Vercel
-2. Configure project settings:
-   - **Root Directory**: `frontend`
-   - **Framework Preset**: Next.js (auto-detected)
-   - **Build Command**: `npm run build` (auto-detected)
-3. Deploy!
-
-### Environment Variables
-
-For local development, create a `.env.local` file:
-
-```bash
-# Site URL for sitemap generation
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
-```
-
-For production deployment on Vercel, add:
-- `NEXT_PUBLIC_SITE_URL` - Your custom domain (e.g., `https://syntorak.com`)
-
-## Featured Projects
-
-- **Platewise** - Recipe management application with intelligent pantry tracking and meal planning
-- **Prompt Builder** - AI-powered prompt engineering tool for optimizing workflows
-
-## Brand Design
-
-The site uses a custom design system from `Setup/brand-design-tokens.md`:
-
-- **Primary Color**: Orange (#F7931E)
-- **Secondary Color**: Green (#4CAF50)
-- **Typography**: Lora (serif, headings) and Poppins (sans-serif, body)
-- **Border Radius**: 10px base
-- **Responsive Design**: Mobile-first approach with Tailwind CSS
-
-## License
-
-All rights reserved © 2025 Syntorak
+**Live Site:** syntorak.com | **GitHub:** github.com/web3at50/syntorak | **Contact:** support@syntorak.com
