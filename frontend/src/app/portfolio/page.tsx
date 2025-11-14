@@ -15,6 +15,13 @@ const projects = [
     tech: ["Next.js", "React", "TypeScript", "OpenAI API", "Tailwind CSS"],
     gradient: "from-secondary to-primary",
   },
+  {
+    title: "NFT Collection Tools",
+    slug: "6529nfts",
+    description: "Real-time NFT portfolio tracking and market analysis platform serving 10,000+ collectors with automated data pipelines and Supabase backend.",
+    tech: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Edge Functions"],
+    gradient: "from-primary to-secondary",
+  },
 ];
 
 export default function Portfolio() {
@@ -73,15 +80,6 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Coming Soon */}
-        <div className="max-w-3xl mx-auto mt-16 text-center">
-          <div className="rounded-xl border-2 border-dashed border-border bg-muted/50 p-12">
-            <h3 className="text-2xl mb-3 text-muted-foreground">More Projects Coming Soon</h3>
-            <p className="text-muted-foreground">
-              Additional applications and sites are currently in development and will be added to the portfolio.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );
