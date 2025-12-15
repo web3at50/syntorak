@@ -281,18 +281,10 @@ export default function PromptBuilder() {
         <section className="mb-12">
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://promptbuilderai.xyz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-semibold"
-            >
-              Visit PromptBuilder Live Site
-            </a>
-            <a
               href="https://github.com/web3at50/promptbuilder"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-lg bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-colors font-semibold"
+              className="px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-semibold"
             >
               View GitHub Repository
             </a>
@@ -570,27 +562,6 @@ export default function PromptBuilder() {
           </div>
         </section>
 
-        {/* Links */}
-        <section className="mb-16">
-          <div className="max-w-2xl mx-auto">
-            <a
-              href="https://promptbuilderai.xyz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group rounded-lg border-2 border-border hover:border-primary bg-card p-6 transition-all hover:shadow-lg block"
-            >
-              <div className="flex items-start justify-between mb-3">
-                <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">Try the Live Demo</h3>
-                <svg className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </div>
-              <p className="text-muted-foreground">
-                Experience the full application at promptbuilderai.xyz - compare AI responses, track costs, manage prompts, and explore the community library
-              </p>
-            </a>
-          </div>
-        </section>
 
         {/* Back to Portfolio */}
         <div className="text-center">

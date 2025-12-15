@@ -3,7 +3,9 @@ import { Lora, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
+import MaintenanceBanner from "@/components/layout/maintenance-banner";
 import { ThemeProvider } from "@/contexts/theme-context";
+import { MaintenanceProvider } from "@/contexts/maintenance-context";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -50,11 +52,14 @@ export default function RootLayout({
       </head>
       <body>
         <ThemeProvider>
-          <Header />
-          <main className="min-h-screen">
-            {children}
-          </main>
-          <Footer />
+          <MaintenanceProvider>
+            <MaintenanceBanner />
+            <Header />
+            <main className="min-h-screen">
+              {children}
+            </main>
+            <Footer />
+          </MaintenanceProvider>
         </ThemeProvider>
       </body>
     </html>
