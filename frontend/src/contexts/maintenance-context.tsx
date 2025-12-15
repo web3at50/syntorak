@@ -10,7 +10,7 @@ interface MaintenanceContextType {
 const MaintenanceContext = createContext<MaintenanceContextType | undefined>(undefined);
 
 // Toggle this to enable/disable maintenance mode
-const MAINTENANCE_ENABLED = true;
+const MAINTENANCE_ENABLED = false;
 const DEFAULT_MESSAGE = "Site under maintenance - content updates coming soon!";
 
 export function MaintenanceProvider({ children }: { children: React.ReactNode }) {
